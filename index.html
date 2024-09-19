@@ -242,5 +242,142 @@
             <td><iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"></iframe></td>
         </tr>
     </table>
+
+    <h2 id="media">HTML Media <a href="#top"> (top)</a></h2>
+    <table border="1">
+        <tr>
+            <th>Description</th>
+            <th>Markup</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Image</td>
+            <td>&lt;img src="source.jpeg" alt="alternative text"&gt;</td>
+            <td><img src=" https://picsum.photos/320/240" alt="alternative text"></td>
+        </tr>
+        <tr>
+            <td>Video</td>
+            <td>&lt;video width="320" height="240" controls&gt;<br>
+                <p style="margin-left: 20px; margin-top: 0px; margin-bottom: 0px;">
+                    &lt;source src="source.mp4" type="video/mp4"&gt;<br>
+                    &lt;source src="source.ogg" type="video/ogg"&gt;<br>
+                    Your browser does not support the video tag.<br>
+                </p>
+                &lt;/video&gt;
+            </td>
+            <td>
+                <video width="320" height="240" controls>
+                    <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>&lt;audio controls&gt;<br>
+                <p style="margin-left: 20px; margin-top: 0px; margin-bottom: 0px;">
+                    &lt;source src="source.ogg" type="audio/ogg"&gt;<br>
+                    &lt;source src="source.mp3" type="audio/ogg"&gt;<br>
+                    Your browser does not support the audio element.<br>
+                </p>
+                &lt;/audio&gt;
+            </td>
+            <td>
+                <audio controls>
+                    <source src="https://content.codecademy.com/courses/Semantic%20HTML/nyc-sounds.mov" type="audio/mp3">
+                    Your browser does not support the audio element
+                </video>
+            </td>
+        </tr>
+        <tr>
+            <td>IFrame</td>
+            <td>&lt;iframe src="url"&gt;&lt;/iframe&gt;</td>
+            <td><iframe src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGRGfdqqK0&#x2F;a4g7Fq1ZCb-A6DrYhHa-rQ&#x2F;view?embed"></iframe></td>
+        </tr>
+    </table>
+
+    <h2 id="table">HTML Table <a href="#top"> (top)</a></h2>
+    <table border="1">
+        <tr>
+            <th>Description</th>
+            <th>Markup</th>
+            <th>Example</th>
+            <th>Output</th>
+        </tr>
+        <tr>
+            <td>Table</td>
+            <td>&lt;table&gt;&lt;/table&gt;</td>
+            <td rowspan="3">
+                &lt;table border=&quot;1&quot;&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 2, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </td>
+            <td rowspan="3">
+                <table border="1">
+                    <tr>
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Column 1</td>
+                        <td>Row 2, Column 2</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Table Row</td>
+            <td>&lt;tr&gt;&lt;/tr&gt;</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>&lt;td&gt;&lt;/td&gt;</td>
+        </tr>
+        <tr>
+            <td>Table Head</td>
+            <td>&lt;th&gt;&lt;/th&gt;</td>
+            <td rowspan="3">&lt;table border ="1"&gt;<br>
+                &lt;thead&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;/thead&gt;<br>
+                &lt;tbody&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 2, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 2, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;/tbody&gt;<br>
+                &lt;tfoor&gt;<br>
+                &lt;tr&gt;<br>&lt;td&gt;Row 1, Column 1&lt;/td&gt;<br>&lt;td&gt;Row 1, Column 2&lt;/td&gt;<br>&lt;/tr&gt;<br>
+                &lt;/tfoot&gt;<br>
+                &lt;table&gt;<br>
+            <td>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Row 1 Column 1</td><td>Row 1 Column 2</td></tr>
+                        <tr><td>Row 2 Column 1</td><td>Row 2 Column 2</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Column 1 Footer</td>
+                            <td>Column 2 Footer</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Table Body</td>
+            <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+        </tr>
+        <tr>
+            <td>Table Footer</td>
+            <td>&lt;tfoot&gt;&lt;/tfoot&gt;</td>
+        </tr>
+    </table>
   </body>
 </html>
