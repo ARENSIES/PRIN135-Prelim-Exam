@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth ;
     
 }
 table {
@@ -17,21 +18,24 @@ table {
     font-weight: 800;
     font-style: normal;
 }
-.title {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-family: "Kanit", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 table {
     width: 100%;
     border-collapse: collapse;
 }
 th,td {
-    text-align: left;padding: 10px;
+    padding: 15px;
+    border: 4px solid black;
+    align-content: center;
 }
-
+td{
+    text-align: left;
+}
+th {
+    background-color: #e4e2e2;
+    font-weight: bolder;
+    text-align: center;
+    font-size: large;
+}
 .sidebar {
     margin: 0;
     padding: 0;
@@ -49,6 +53,9 @@ a {
     padding: 16px;
     text-decoration: none; 
     font-size: large;
+}
+.active {
+    background-color: #bbbbbb;
 }
 .footer {
     display: block;
@@ -71,7 +78,7 @@ a {
 }
   
   .sidebar .links:hover:not(.active) {
-    background-color: #888585;
+    background-color: #bbbbbb;
     color: w
   }
 
@@ -79,4 +86,35 @@ a {
     margin-left: 300px;
     padding: 1px 16px;
     height: 1000px;
+  }
+
+  .lists {
+    padding-left: 30px;
+  }
+
+  .title {
+    text-align: center;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 3px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 81%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
   }
